@@ -2,6 +2,8 @@ Tcm::Application.routes.draw do
   
   root :to => 'pages#home'
   get 'about' => 'pages#about'
+  get 'buy' => 'pages#buy'
+  get 'sell' => 'pages#sell'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

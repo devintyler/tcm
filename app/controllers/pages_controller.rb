@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def buy
+  end
+
+  def sell
+  end
 end
