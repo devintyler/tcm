@@ -6,7 +6,7 @@
 		<div class="span9">
 			<div class="hero-unit">
 				<h2>Welcome to The Collegiate Marketplace,</h2>
-				<h2><%= current_user.email %></h2>
+				<h2><%= current_user.name %></h2>
 			</div>
 		</div>
 	<% else %>
@@ -18,6 +18,9 @@
 				</p>
 				<p>
 					<%= link_to 'Sign Up Now!', new_user_registration_path, class: "btn btn-large btn-primary" %>
+				</p>
+				<p>
+					<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
 				</p>
 			</div>
 		</div>
